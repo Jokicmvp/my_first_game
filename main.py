@@ -1,19 +1,17 @@
-import tkinter as tk
+import pygame
 
-root = tk.Tk()
-root.title("рпррргпгрраеер")
-root.geometry("500x500")
-root.resizable(False, False)
-root.config(background="beige")
+WIDTH = 500
+HEIGHT = 500
+FPS = 30
 
-label = tk.Label(text="заполните анкету", background="beige", font="Comic 30")
-label.pack(anchor="center")
+pygame.init()
+pygame.mixer.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('Моя первая игра')
+clock = pygame.time.Clock()
 
-entry_fio = tk.Entry(font="comic 25")
-entry_age = tk.Entry(font="comic 25")
-entry_class = tk.Entry(font= "comic 25")
-entry_fio.pack(anchor= "center", pady=10)
-entry_age.pack(anchor="center", pady=10)
-entry_class.pack(anchor="center", pady=10)
-root.mainloop()
+running = True
+while running:
+    pass
+
 
