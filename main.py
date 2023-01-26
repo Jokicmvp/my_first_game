@@ -13,5 +13,6 @@ clock = pygame.time.Clock()
 running = True
 while running:
     pass
+#sadasdas
 
 
